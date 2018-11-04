@@ -259,3 +259,123 @@ class Basketball extends React.Component {
 
 
 //   React: Use React to Render Nested Components
+// The last challenge showed a simple way to compose two components, but there are many different ways you can compose components with React.
+
+// Component composition is one of React's powerful features. When you work with React, it is important to start thinking about your user interface in terms of components like the App example in the last challenge. You break down your UI into its basic building blocks, and those pieces become the components.
+
+const TypesOfFruit = () => {
+    return (
+      <div>
+        <h2>Fruits:</h2>
+        <ul>
+          <li>Apples</li>
+          <li>Blueberries</li>
+          <li>Strawberries</li>
+          <li>Bananas</li>
+        </ul>
+      </div>
+    );
+  };
+  
+  const Fruits = () => {
+    return (
+      <div>
+        { /* change code below this line */ }
+        <TypesOfFruit />
+  
+        { /* change code above this line */ }
+      </div>
+    );
+  };
+  
+  class TypesOfFood extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+  
+    render() {
+      return (
+        <div>
+          <h1>Types of Food:</h1>
+          { /* change code below this line */ }
+           <Fruits />
+  
+          { /* change code above this line */ }
+        </div>
+      );
+    }
+  };
+
+// ************************************************
+
+
+const TypesOfFruits = () => {
+    return(
+        <div>
+            <h2> Fruits:</h2>
+            <ul>
+                <li>Apples</li>
+                <li>BlueBerries</li>
+                <li>Straw...</li>
+                <li>Bananas</li>
+            </ul>
+        </div>
+    );
+
+};
+const TypesOfVeggies = () => {
+    return(
+        <div>
+            <h2> Veggies:</h2>
+            <ul>
+                <li>Kale</li>
+                <li>Broccolli</li>
+                <li>Spinich</li>
+                <li>Eggplant</li>
+            </ul>
+        </div>
+    );
+
+};
+const TypesOfMeats = () => {
+    return(
+        <div>
+            <h2> Meats</h2>
+            <ul>
+                <li>chicken</li>
+                <li>Turkey</li>
+                <li>Beef</li>
+                <li>Lamb</li>
+            </ul>
+        </div>
+    );
+
+};
+
+
+const FruitsAnVeggies = () => {
+    return(
+        <div>
+            <TypesOfFruits />
+            <TypesOfVeggies />
+
+        </div>
+    );
+};
+
+class TypesOfFood extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render(){
+        return(
+            <div>
+                <h1>Types of Food:</h1>
+                <FruitsAnVeggies />
+                <TypesOfMeats />
+            </div>
+
+        );
+    }
+};
+
