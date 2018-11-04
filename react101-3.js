@@ -68,3 +68,5 @@ class TypesOfFood extends React.Component {
     }
 };
 
+ReactDOM.render(<TypeOfFood /> , document.getElementById('root'));
+
