@@ -13,12 +13,25 @@ class App extends React.Component {
         };
     }
 
+    handleTaskChange = e => {
+        this.setState({ task: e.target.value});
+    };
+
+    handleAddtodoSubmit= (e) =>{
+        e.preventDefault();
+        const todos = this.state.todos.slice();
+        todos.push({task: this.state.task, id: Date.now(), completed: false});
+        this.setState({todos: todos});
+    };
+
     render(){
         return(
             <div className="App">
                 <h1>Hello</h1>
-                <h1>Hello</h1>
                 <todos todos= {this.state. todos} />
+                <TodoForm 
+                handleAddTodo={this.handleAddTodoSubmit}
+                handle task={this.handleTaskChange} />
             
 
 
@@ -26,3 +39,6 @@ class App extends React.Component {
         );
     }
 }
+
+const rootElement = document.getElementById("root");
+ReactDom.render(App />, rootElement);
