@@ -23,12 +23,13 @@ class ParentComponent extends React.Component {
         return(
             <div>
                 <h1>These ar colors i like to use:</h1>
-                <ChildComponent colors
+                <ChildComponent colors={}/>
             </div>
 
         );
     }
 };
+ReactDOM.render(<ParentComponent />, document.getElementById('root'));
 
 
 
