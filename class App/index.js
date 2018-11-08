@@ -18,6 +18,8 @@ class App extends React.Component {
             <div className="App">
                 <h1>Hello</h1>
                 <h1>Hello</h1>
+                <todos todos= {this.state. todos} />
+            
 
 
             </div>
