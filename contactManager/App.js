@@ -10,13 +10,11 @@ class App extends Component {
                 
                 <Header branding="Contact Manager" />
 
-                <Contact name="John Doe"
-                email="jdoe@gmail.com"
-                phone="555-555-555" />
+                <Contacts />
 
-                <Contact name="Karen Doe"
+                {/*<Contact name="Karen Doe"
                 email="kdoe@gmail.com"
-                phone="551-551-551" />
+                phone="551-551-551" />*/}
             </div>
         );
     }
