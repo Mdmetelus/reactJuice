@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Contact from './contact';
+import Contacts from './contact';
 import Header from './Header';
 
 class App extends Component {
