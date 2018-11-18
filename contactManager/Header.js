@@ -10,11 +10,14 @@ const Header = props => {
     );
 };
 
+
+// thisis the default prop that wll show if nothing is set to pass in yet.
 Header.defaultProps = {
     branding: 'MyApp'
 };
 
-Header.prototype = {
+//proptype
+Header.propType = {
     branding: PropTypes.string.isRequired
 };
 export default Header;
