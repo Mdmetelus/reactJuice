@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import contact from './contact'
 
  class Contacts extends Component {
     constructor() {
@@ -32,12 +33,18 @@ import React, { Component } from 'react'
       const{ contacts } = this.state;
     return (
       <div>
-          {contacts.map(contact => (
-              <h1>{contact.name}</h1>
+          {contacts.map(contact => 
+          
+          <Contact 
+          key={contact.id}
+          name={contact.name}
+          email={contact.email}
+          phone={contact.phone} 
+          />
           ))}
         
       </div>
-    )
+    );
   }
 }
 
