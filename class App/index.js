@@ -8,10 +8,20 @@ class App extends React.Component {
     constructor () {
         super();
         this.state = {
-            todos: [{ task: "Clean Bathroom", id: Date.now(), completed: false }],
+            todos: [{ task: "Clean Bathroom", 
+                id: Date.now(), 
+                completed: false }],
             task:'',
         };
     }
+
+    RenderMessage = (props) => {
+        return( <div>
+            <span>{props.message}</span>
+        </div>
+            );
+
+    };
 
     handleTaskChange = e => {
         this.setState({ task: e.target.value});
@@ -28,6 +38,7 @@ class App extends React.Component {
         return(
             <div className="App">
                 <h1>Hello</h1>
+                < RenderMessage />
                 <todos todos= {this.state. todos} />
                 <TodoForm 
                 handleAddTodo={this.handleAddTodoSubmit}
