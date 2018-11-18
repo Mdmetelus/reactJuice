@@ -21,13 +21,16 @@ class Contact extends React.Component {
     render() {
         // const { name, email, phone } = this.props;
 
+        const { showContactInfo} = this.state; 
+
         return(
             <div>
                 <h4>{this.props.contact.name}<span onClick={this.onShowClick} >ClickMe(Down Arrow)</span></h4>
-                <ul>
+                {showContactInfo ? (<ul>
                     <li>Email: {this.props.contact.email}<span onClick={() => this.setState({showContactInfo: !this.state.ShowContactInfo})}>Click Here</span></li>
                     <li>Phone: {this.props.contact.phone}<span>click Here</span></li>
-                </ul>
+                </ul>) : null}
+                
             </div>
         );
     }
