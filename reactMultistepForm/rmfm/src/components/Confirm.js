@@ -5,7 +5,7 @@ import {List, ListItem} from 'material-ui/List';
 import RaisedButton from 'material-ui/RaisedButton';
 // import { RaisedButton } from 'material-ui';
 
-export class FormUserDetails extends Component {
+export class Comfirm extends Component {
 
     continue = e => {
         e.preventdefault();
@@ -80,4 +80,4 @@ const styles = {
     }
 }
 
-export default FormUserDetails
+export default Comfirm;

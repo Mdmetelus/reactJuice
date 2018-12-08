@@ -74,4 +74,4 @@ const styles = {
     }
 }
 
-export default FornPersonalDetails
+export default FornPersonalDetails;
