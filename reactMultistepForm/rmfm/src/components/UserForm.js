@@ -1,7 +1,7 @@
 
 
 import React, { Component } from 'react'
-import FormUserDetails from './FormPersonalDetails';
+import FormUserDetails from './FormUserDetails';
 
 export class UserForm extends Component {
     state = {
@@ -13,26 +13,24 @@ export class UserForm extends Component {
         city: '',
         bio:''
 
-    }
+    };
 
     // proceed to the next step
     nextStep = () => {
         const { step } = this.state;
-        this.setState({
-            step:step + 1 
-        });
-    }
+        this.setState({ step:step + 1 });
+    };
 
     // back one step
     prevStep = () => {
-        const {step} = this.state;
+        const { step } = this.state;
         this.setState({ step: step -1 });
-    }
+    };
 
     //handle feild change
     handleChange = input => e => {
         this.setState({ [input]: e.target.value });
-    }
+    };
 
 
   render() {
@@ -58,12 +56,7 @@ export class UserForm extends Component {
             default:
                 return <h1>Hello World</h1>
       }
-    // return (
-    //   <div>
-        
-    //   </div>
-    // )
   }
 }
 
-export default UserForm
+export default UserForm;

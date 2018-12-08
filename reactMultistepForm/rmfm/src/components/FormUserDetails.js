@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import MuiThemeProvider from 'matetial-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
-import TextFeild from 'material-ui/TextFeild';
+import TextField from 'material-ui/TextField';
 import RaisedButtons from 'material-ui/RaisedButtons';
 import { RaisedButton } from 'material-ui';
 
@@ -13,12 +13,14 @@ export class FormUserDetails extends Component {
     }
 
   render() {
+      //destructuring
       const {values} = this.props;
     return (
 
       <MuiThemeProvider>
           <>
            <AppBar title="enter User Details"></AppBar>
+
             <TextField
                 hintText="Enter Your First Name"
                 floatingLabelText= "First Name"
