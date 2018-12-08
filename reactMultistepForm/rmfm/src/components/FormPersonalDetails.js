@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import AppBar from 'material-ui/AppBar';
+// import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
@@ -24,7 +24,7 @@ export class FornPersonalDetails extends Component {
 
       <MuiThemeProvider>
           <>
-           <AppBar title="Enter Personal Details"></AppBar>
+           <h1 title="Enter Personal Details">Enter Personal Details</h1>
 
             <TextField
                 hintText="Enter Your Occupation"

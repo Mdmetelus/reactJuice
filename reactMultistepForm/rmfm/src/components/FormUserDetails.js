@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import AppBar from 'material-ui/AppBar';
+// import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 // import { RaisedButton } from 'material-ui';
@@ -19,7 +19,7 @@ export class FormUserDetails extends Component {
 
       <MuiThemeProvider>
           <>
-           <AppBar title="enter User Details"></AppBar>
+           <h1 title="Enter User Details">Enter User Details</h1>
 
             <TextField
                 hintText="Enter Your First Name"
@@ -45,7 +45,7 @@ export class FormUserDetails extends Component {
                 <br/>
 
                 <RaisedButton 
-                label="continue"
+                label="Continue"
                 primary={true}
                 style={styles.button}
                 onClick={this.continue}/>
