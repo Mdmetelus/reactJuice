@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import MuiThemeProvider from 'matetial-ui/styles/MuiThemeProvider';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
-import RaisedButtons from 'material-ui/RaisedButtons';
-import { RaisedButton } from 'material-ui';
+import RaisedButton from 'material-ui/RaisedButton';
+// import { RaisedButton } from 'material-ui';
 
 export class FormUserDetails extends Component {
 
@@ -26,12 +26,14 @@ export class FormUserDetails extends Component {
                 floatingLabelText= "First Name"
                 onChange={this.props.handleChange('firstName')}
                 defaultValue= {values.firstName} />
+                <br/>
 
                 <TextField
                 hintText="Enter Your Last Name"
                 floatingLabelText= "Last Name"
                 onChange={this.props.handleChange('lastName')}
                 defaultValue= {values.lastName} />
+                <br/>
 
 
                 <TextField
@@ -45,8 +47,9 @@ export class FormUserDetails extends Component {
                 <RaisedButton 
                 label="continue"
                 primary={true}
-                style={StyleSheet.button}
+                style={styles.button}
                 onClick={this.continue}/>
+                <br/>
           </>
         <h1>Hello from User Details</h1>
       </MuiThemeProvider>
