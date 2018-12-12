@@ -8,13 +8,13 @@ import RaisedButton from 'material-ui/RaisedButton';
 export class Comfirm extends Component {
 
     continue = e => {
-        e.preventdefault();
+        // e.preventdefault();
         //process Form, send it to the api like axois, or any other api
         this.props.nextStep();
     }
 
     back = e => {
-        e.preventdefault();
+        // e.preventdefault();
         this.props.prevStep();
     }
 

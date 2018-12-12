@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-// import AppBar from 'material-ui/AppBar';
+import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 // import { RaisedButton } from 'material-ui';
@@ -8,7 +8,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 export class FormUserDetails extends Component {
 
     continue = e => {
-        e.preventdefault();
+        // e.preventdefault();
         this.props.nextStep();
     }
 

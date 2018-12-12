@@ -1,19 +1,19 @@
 import React, { Component } from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-// import AppBar from 'material-ui/AppBar';
+import AppBar from 'material-ui/AppBar';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 
 
-export class FornPersonalDetails extends Component {
+export class FormPersonalDetails extends Component {
 
     continue = e => {
-        e.preventdefault();
+        // e.preventdefault();
         this.props.nextStep();
     }
 
     back = e => {
-        e.preventdefault();
+        // e.preventdefault();
         this.props.prevStep();
     }
 
@@ -74,4 +74,4 @@ const styles = {
     }
 }
 
-export default FornPersonalDetails;
+export default FormPersonalDetails;
