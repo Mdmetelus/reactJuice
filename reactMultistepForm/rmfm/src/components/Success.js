@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
+// import { NavLink } from 'react-router-dom';
 import AppBar from 'material-ui/AppBar';
 
 
@@ -28,10 +29,20 @@ export class Success extends Component {
           {/* <p>You will get an email with further instructions.</p> */}
           {/* <h1>Click Here To Enter LambdaNotes</h1> */}
 
+          {/* <NavLink exact to="/">
+            <RaisedButton 
+                label="Lambda Notes"
+                primary={true}
+                style={styles.button}
+                // onClick={this.continue}
+                />
+                <br/>
+          </NavLink> */}
+
           <RaisedButton 
                 label="Lambda Notes"
                 primary={true}
-                // style={styles.button}
+                style={styles.button}
                 // onClick={this.continue}
                 />
                 <br/>
@@ -43,6 +54,10 @@ export class Success extends Component {
   }
 }
 
-
+const styles = {
+    button: { 
+        margin:15
+    }
+}
 
 export default Success;
