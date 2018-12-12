@@ -14,12 +14,13 @@ export class FormUserDetails extends Component {
 
   render() {
       //destructuring
-      const {values} = this.props;
+      const { values } = this.props;
     return (
 
       <MuiThemeProvider>
           <>
            <h1 title="Enter User Details">Enter User Details</h1>
+           <h4>Hello! We Need Your User Details</h4>
 
             <TextField
                 hintText="Enter Your First Name"
@@ -39,6 +40,7 @@ export class FormUserDetails extends Component {
                 <TextField
                 hintText="Enter Your Email"
                 floatingLabelText= "Email"
+                type="email"
                 onChange={this.props.handleChange('email')}
                 defaultValue= {values.email} />
 
@@ -51,7 +53,7 @@ export class FormUserDetails extends Component {
                 onClick={this.continue}/>
                 <br/>
           </>
-        <h1>Hello from User Details</h1>
+        <h1>Lambda Notes</h1>
       </MuiThemeProvider>
     )
   }

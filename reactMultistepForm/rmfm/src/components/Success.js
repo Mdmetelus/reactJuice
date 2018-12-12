@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
 import AppBar from 'material-ui/AppBar';
 
 
@@ -24,8 +25,16 @@ export class Success extends Component {
           <>
           <h1>Success</h1>
           <h1>Thank You for your Submission</h1>
-          <p>You will get an email with further instructions.</p>
-          <h1>Hello from User Details</h1>
+          {/* <p>You will get an email with further instructions.</p> */}
+          {/* <h1>Click Here To Enter LambdaNotes</h1> */}
+
+          <RaisedButton 
+                label="Lambda Notes"
+                primary={true}
+                // style={styles.button}
+                // onClick={this.continue}
+                />
+                <br/>
            
           </>
        
